@@ -1,11 +1,22 @@
 GET http://localhost:3000/posts
-# Authorization: Bearer JWT using POST method
+# Authorization: Bearer JWT using Login method
 #Request Headers
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTG9yZW4iLCJpYXQiOjE2MzQwNzA2MjN9.SjqNDGk2watJnkLx6Mo_VARPBUuGk8zHLleiGWl-eHk
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTG9yZW4iLCJpYXQiOjE2MzQwNzQ4OTEsImV4cCI6MTYzNDA3NDkwNn0.K16N8SrKMGVQFyOALx2BlG6hh3PdkuWijEnbOQkgnSw
 
 ###
 
-POST http://localhost:3000/login
+POST http://localhost:4000/token
+# token: refreshToken JWT using Login method
+#Request Headers
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTG9yZW4iLCJpYXQiOjE2MzQwNzQ4NTZ9.RkESPhIKKqikVKdKrJGTjFAfgRJjdvJmQ15McDmy3UE"
+}
+
+###
+
+POST http://localhost:4000/login
 #Request Headers
 Content-Type: application/json
 

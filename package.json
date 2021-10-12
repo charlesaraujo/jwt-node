@@ -5,7 +5,8 @@
   "author": "Charles Araújo <charles_araujo@ymail.com>",
   "license": "MIT",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "server": "nodemon server.js",
+    "auth": "nodemon authServer.js"
   },
   "dependencies": {
     "dotenv": "^10.0.0",
