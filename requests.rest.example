@@ -1,7 +1,7 @@
 GET http://localhost:3000/posts
 # Authorization: Bearer JWT using POST method
 #Request Headers
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTG9yZW4iLCJpYXQiOjE2MzQwNzA2MjN9.SjqNDGk2watJnkLx6Mo_VARPBUuGk8zHLleiGWl-eHk
+Authorization: Bearer abcde
 
 ###
 
@@ -10,5 +10,5 @@ POST http://localhost:3000/login
 Content-Type: application/json
 
 {
-    "username": "Loren"
+    "username": ""
 }
