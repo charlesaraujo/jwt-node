@@ -1,25 +1,35 @@
+###Get posts authorizeds
 GET http://localhost:3000/posts
 # Authorization: Bearer JWT using Login method
 #Request Headers
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTG9yZW4iLCJpYXQiOjE2MzQwNzQ4OTEsImV4cCI6MTYzNDA3NDkwNn0.K16N8SrKMGVQFyOALx2BlG6hh3PdkuWijEnbOQkgnSw
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTG9yZW4iLCJpYXQiOjE2MzQwNzY4NTAsImV4cCI6MTYzNDA3Njg3MH0.Uvobr2vXnvodNtOyJK6tTxocnFzf1pfbSR-iCjnQN2E
 
-###
 
+### refresh Token
 POST http://localhost:4000/token
 # token: refreshToken JWT using Login method
 #Request Headers
 Content-Type: application/json
 
 {
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTG9yZW4iLCJpYXQiOjE2MzQwNzQ4NTZ9.RkESPhIKKqikVKdKrJGTjFAfgRJjdvJmQ15McDmy3UE"
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTG9yZW4iLCJpYXQiOjE2MzQwNzY5MzAsImV4cCI6MTYzNDA3Njk3MH0.7pW7o9ARfBu0Gp7m3eQmynJesxtt4fCzobfBOuO-qME"
 }
 
-###
-
+### Login 
 POST http://localhost:4000/login
 #Request Headers
 Content-Type: application/json
 
 {
     "username": "Loren"
+}
+
+### Delete token
+DELETE http://localhost:4000/logout
+# token: refreshToken JWT using Login method
+#Request Headers
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTG9yZW4iLCJpYXQiOjE2MzQwNzY4MjUsImV4cCI6MTYzNDA3Njk0NX0.0LnwHv0PaU9lA8fQtul2DG1W0k-HaRnQXRitZit9Dgk"
 }
