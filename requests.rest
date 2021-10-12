@@ -1,9 +1,10 @@
-###Get posts authorizeds
+# USE THIS FILE WITH "REST CLIENT" VSCODE EXTENSION
+
+### Get posts authorizeds
 GET http://localhost:3000/posts
 # Authorization: Bearer JWT using Login method
 #Request Headers
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTG9yZW4iLCJpYXQiOjE2MzQwNzY4NTAsImV4cCI6MTYzNDA3Njg3MH0.Uvobr2vXnvodNtOyJK6tTxocnFzf1pfbSR-iCjnQN2E
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTG9yZW4iLCJpYXQiOjE2MzQwNzgxNzgsImV4cCI6MTYzNDA3ODE5OH0.Kix-e2dwVsgHZ0muZYE06N7ew4aeMGMqK7kWFwj3epw
 
 ### refresh Token
 POST http://localhost:4000/token
